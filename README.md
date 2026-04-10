@@ -74,35 +74,6 @@ We implemented and compared multiple architectures to identify the best-performi
 
 ---
 
-## 📏 Evaluation Metrics
-
-### ✔ PSNR (Peak Signal-to-Noise Ratio)
-- Measures reconstruction quality  
-- Higher value = better performance  
-
-### ✔ SSIM (Structural Similarity Index)
-- Measures structural similarity  
-- Range: 0 to 1 (higher is better)  
-
----
-
-## 📈 Results Summary
-
-| Model   | PSNR (dB) | SSIM  |
-|----------|------------|--------|
-| EDCNN   | XX.XX      | X.XXXX |
-| RED-CNN | XX.XX      | X.XXXX |
-| U-Net   | XX.XX      | X.XXXX |
-| DnCNN   | XX.XX      | X.XXXX |
-| GAN     | XX.XX      | X.XXXX |
-
-👉 **Best Model:** EDCNN / (your best result)
-
----
-
-## 💾 Saved Models
-
----
 
 ## 📏 Evaluation Metrics
 
