@@ -71,7 +71,13 @@ We implemented and compared multiple architectures to identify the best-performi
 ---
 
 ## 🏗️ Workflow
-
+LDCT Input Image
+↓
+Deep Learning Model (EDCNN / U-Net / etc.)
+↓
+Denoised CT Output
+↓
+Comparison with NDCT (Ground Truth)
 ---
 
 
