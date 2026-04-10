@@ -129,13 +129,15 @@ Measures structural similarity between two images.
 
 ## 📈 Results Comparison
 
-| Model   | PSNR (dB) | SSIM  |
-|----------|------------|--------|
-| EDCNN   | XX.XX      | X.XXXX |
-| RED-CNN | XX.XX      | X.XXXX |
-| U-Net   | XX.XX      | X.XXXX |
-| DnCNN   | XX.XX      | X.XXXX |
-| GAN     | XX.XX      | X.XXXX |
+| Model          | PSNR (dB)   | SSIM   |
+|----------------|-------------|--------|
+| EDCNN          | 42.55       | 0.9644 |
+| RED-CNN        | 41.92       | 0.9623 |
+| U-Net          |40.90        | 0.9551 |
+| DnCNN          | 28.19       | 0.6349 |
+| WGAN           | 40.82       |0.9465  |
+|Attention U-Net |36.63        |0.9488  |
+  
 
 👉 Best Performing Model: **EDCNN (replace with your actual result)**
 
