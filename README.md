@@ -153,51 +153,89 @@ All trained models are saved in PyTorch format:
 
 ---
 
-## 🚀 Installation & Setup
+<!-- 🚀 INSTALLATION & SETUP -->
+<h2>🚀 Installation & Setup</h2>
 
-### Step 1: Install dependencies
-```bash
+<h3>Step 1: Install dependencies</h3>
+<pre>
 pip install torch torchvision numpy matplotlib scikit-image kagglehub pillow opencv-python
+</pre>
 
-
-### Step 2: Download dataset
+<h3>Step 2: Download dataset</h3>
+<pre>
 import kagglehub
 
 path = kagglehub.dataset_download("andrewmvd/ct-low-dose-reconstruction")
 print("Dataset downloaded at:", path)
+</pre>
 
-
-Step 3: Load model
+<h3>Step 3: Load model</h3>
+<pre>
 import torch
 from model import UNet
 
 model = UNet()
 model.load_state_dict(torch.load("unet_model.pth", map_location=torch.device('cpu')))
 model.eval()
+</pre>
 
-
-Step 4: Run evaluation
+<h3>Step 4: Run evaluation</h3>
+<pre>
 from evaluate import evaluate
 
 results = evaluate(model, test_loader)
 print(results)
+</pre>
 
-📊 Output Visualization
+<hr>
 
-The model generates the following outputs:
+<!-- 📊 OUTPUT VISUALIZATION -->
+<h2>📊 Output Visualization</h2>
+<ul>
+  <li>LDCT (Noisy input image)</li>
+  <li>Denoised CT image (Model output)</li>
+  <li>NDCT (Ground truth image)</li>
+  <li>Error difference map</li>
+</ul>
 
-LDCT (Noisy input image)
-Denoised CT image (Model output)
-NDCT (Ground truth image)
-Error difference map
+<hr>
 
+<!-- 🔬 KEY CONTRIBUTIONS -->
+<h2>🔬 Key Contributions</h2>
+<ul>
+  <li>Implemented 5 deep learning architectures from scratch</li>
+  <li>Compared multiple models on medical dataset</li>
+  <li>Used patient-wise splitting for realistic evaluation</li>
+  <li>Improved reconstruction quality of CT scans</li>
+  <li>Analyzed performance using PSNR and SSIM</li>
+</ul>
 
-🔬 Key Contributions
-Implemented 5 deep learning architectures from scratch
-Compared multiple models on medical dataset
-Used patient-wise splitting for realistic evaluation
-Improved reconstruction quality of CT scans
-Analyzed performance using PSNR and SSIM
+<hr>
+
+<!-- 👨‍💻 TECH STACK -->
+<h2>👨‍💻 Tech Stack</h2>
+
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+  <span>🐍 Python</span>
+  <span>🔥 PyTorch</span>
+  <span>📊 NumPy</span>
+  <span>🖼 OpenCV</span>
+  <span>📈 Matplotlib</span>
+  <span>🧪 Scikit-Image</span>
+  <span>📦 KaggleHub</span>
+</div>
+
+<hr>
+
+<!-- ⭐ FUTURE IMPROVEMENTS -->
+<h2>⭐ Future Improvements</h2>
+<ul>
+  <li>Improve GAN stability with advanced loss functions</li>
+  <li>Add attention-based U-Net</li>
+  <li>Deploy as a web app using Streamlit</li>
+  <li>Optimize models for real-time inference</li>
+  <li>Extend to MRI and PET scan denoising</li>
+</ul>
 
 👨‍💻 Tech Stack
 Python
