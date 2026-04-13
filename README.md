@@ -232,10 +232,12 @@ print(results)
 <!-- ⭐ FUTURE IMPROVEMENTS -->
 <h2>⭐ Future Improvements</h2>
 <ul>
-  <li>Improve GAN stability with advanced loss functions</li>
-  <li>Add attention-based U-Net</li>
-  <li>Deploy as a web app using Streamlit</li>
-  <li>Optimize models for real-time inference</li>
+  <liTransformer-Based Architectures
+/li>
+  <li>ADiffusion Model-Based Denoising</li>
+  <li>Advanced Loss Functions
+</li>
+  <li>Clinical Validation</li>
   <li>Extend to MRI and PET scan denoising</li>
 </ul>
 
@@ -249,8 +251,7 @@ Scikit-Image
 KaggleHub
 
 ⭐ Future Improvements
-Improve GAN stability with advanced loss functions
-Add attention-based U-Net
-Deploy as a web app using Streamlit
-Optimize models for real-time inference
-Extend to MRI and PET scan denoising
+Transformer-Based Architectures
+Advanced Loss Functions
+Diffusion Model-Based Denoising
+Clinical Validation
